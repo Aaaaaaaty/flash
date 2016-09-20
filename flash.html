@@ -8,22 +8,51 @@
 <body>
   <div id="content">
     <div class="content-wrap">
-      <img src="./pic/bg.jpg" alt="" class="content-wrap-bg">
+      <img src="./pic/bg.png" alt="" class="content-wrap-bg">
     </div>
-    <div class="animals"></div>
+    <div class="animals" id="dog"></div>
+    <div class="animals" id="cat"></div>
+    <div class="animals" id="daxiang"></div>
   </div>
   <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="./js/jquery.transit.min.js"></script>
   <script type="text/javascript" src="./js/swipe.js"></script>
+  <script type="text/javascript" src="./js/animals.js"></script>
   <script type="text/javascript">
     // console.log($('.content-wrap-bg').width())
     var swipe = Swipe($('#content'))
     // console.log($('.content-wrap-bg').width())
-    swipe.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 5000)
+    swipe.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 10000)
 
-    //多种动物出场动画，每个动物代表一个数字
-
-    //开奖时，随机抽取8个数，这8个数代表的动物的路径需要依次超前
-
+    //给动物注册开场动画,位置用百分比表示
+    var showTime = 5000
+    var lotteryTime = 5000
+    var animals = [{
+      'name': '#dog',
+      'startX': 0.4,
+      'startY': 0.5,
+      'endX': 0.6,
+      'endY': 0.7,
+      'startTime': 1000,
+    },{
+      'name': '#cat',
+      'startX': 0,
+      'startY': 0.5,
+      'endX': 0.8,
+      'endY': 0.7,
+      'startTime': 2000,
+    },{
+      'name': '#fish',
+      'startX': 0,
+      'startY': 0.5,
+      'endX': 0.9,
+      'endY': 0.7,
+      'startTime': 0,
+    }]
+    // Animals(animals, showTime, lotteryTime)
+    // $('#dog').addClass('show')
+    //两组动画 每个动物有开奖动画和退出动画
+    //开奖动
   </script>
 </body>
 </html>
