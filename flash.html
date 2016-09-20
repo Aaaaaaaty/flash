@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>开奖</title>
+  <link rel="stylesheet" href="./css/flash.css">
+</head>
+<body>
+  <div id="content">
+    <div class="content-wrap">
+      <img src="./pic/bg.jpg" alt="" class="content-wrap-bg">
+    </div>
+    <div class="animals"></div>
+  </div>
+  <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" src="./js/swipe.js"></script>
+  <script type="text/javascript">
+    // console.log($('.content-wrap-bg').width())
+    var swipe = Swipe($('#content'))
+    // console.log($('.content-wrap-bg').width())
+    swipe.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 5000)
+
+    //多种动物出场动画，每个动物代表一个数字
+
+    //开奖时，随机抽取8个数，这8个数代表的动物的路径需要依次超前
+
+  </script>
+</body>
+</html>
