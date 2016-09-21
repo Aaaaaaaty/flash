@@ -9,20 +9,26 @@
   <div id="content">
     <div class="content-wrap">
       <img src="./pic/bg.png" alt="" class="content-wrap-bg">
-      <img src="./pic/tiankong.png" class="content-sky"alt="">
+      <img src="./pic/sky.jpg" class="content-sky"alt="">
     </div>
     <div class="animals" id="daxiang"></div>
+    <div class="animals" id="baozi"></div>
+    <div class="animals" id="fenghuang"></div>
+    <div class="animals" id="dog"></div>
+    <div class="animals" id="banma"></div>
+    <div class="animals" id="changjinglu"></div>
   </div>
   <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="./js/jquery.transit.min.js"></script>
   <script type="text/javascript" src="./js/swipe.js"></script>
+  <script type="text/javascript" src="./js/swipe.sky.js"></script>
   <script type="text/javascript" src="./js/animals.js"></script>
   <script type="text/javascript">
 
-    var swipe_bg = Swipe($('#content'), $('.content-wrap-bg'))
-    var swipe_sky = Swipe($('#content'), $('.content-sky'))
-    swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 10000)
-    swipe_bg.scrollTo($('.content-sky').width() - $('#content').width(), 20000)
+    var swipe_bg = SwipeSky($('#content'), $('.content-wrap-bg'))
+    var swipe_sky = SwipeSky($('#content'), $('.content-sky'))
+    swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 29000)
+    swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 34000)
     //给动物注册开场动画,位置用百分比表示
     var showTime = 5000
     var lotteryTime = 5000
@@ -49,7 +55,24 @@
       'startTime': 0,
     }]
     // Animals(animals, showTime, lotteryTime)
-    $('#daxiang').addClass('daxiang')
+    //开场动画固定每个动物分别写动画
+    // $('#daxiang').addClass('daxiang')
+    // $('#baozi').addClass('baozi')
+    // $('#banma').addClass('banma')
+    // $('#changjinglu').addClass('changjinglu')
+    // $('#fenghuang').addClass('fenghuang')
+    // $('#dog').addClass('dog')
+    var setTime = function(item, time) {
+      var timer = setTimeout(function() {
+        $('#'+item).addClass(item)
+      }, time)
+    }
+    setTime('daxiang', 0)
+    setTime('baozi', 0)
+    setTime('banma', 0)
+    setTime('changjinglu', 0)
+    setTime('fenghuang', 0)
+    setTime('dog', 0)
     //两组动画 每个动物有开奖动画和退出动画
     //开奖动
   </script>
