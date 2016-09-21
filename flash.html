@@ -24,36 +24,31 @@
   <script type="text/javascript" src="./js/swipe.sky.js"></script>
   <script type="text/javascript" src="./js/animals.js"></script>
   <script type="text/javascript">
-
-    var swipe_bg = SwipeSky($('#content'), $('.content-wrap-bg'))
-    var swipe_sky = SwipeSky($('#content'), $('.content-sky'))
-    swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 29000)
-    swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 34000)
     //给动物注册开场动画,位置用百分比表示
-    var showTime = 5000
-    var lotteryTime = 5000
-    var animals = [{
-      'name': '#dog',
-      'startX': 0.4,
-      'startY': 0.5,
-      'endX': 0.6,
-      'endY': 0.7,
-      'startTime': 1000,
-    },{
-      'name': '#cat',
-      'startX': 0,
-      'startY': 0.5,
-      'endX': 0.8,
-      'endY': 0.7,
-      'startTime': 2000,
-    },{
-      'name': '#fish',
-      'startX': 0,
-      'startY': 0.5,
-      'endX': 0.9,
-      'endY': 0.7,
-      'startTime': 0,
-    }]
+    // var showTime = 5000
+    // var lotteryTime = 5000
+    // var animals = [{
+    //   'name': '#dog',
+    //   'startX': 0.4,
+    //   'startY': 0.5,
+    //   'endX': 0.6,
+    //   'endY': 0.7,
+    //   'startTime': 1000,
+    // },{
+    //   'name': '#cat',
+    //   'startX': 0,
+    //   'startY': 0.5,
+    //   'endX': 0.8,
+    //   'endY': 0.7,
+    //   'startTime': 2000,
+    // },{
+    //   'name': '#fish',
+    //   'startX': 0,
+    //   'startY': 0.5,
+    //   'endX': 0.9,
+    //   'endY': 0.7,
+    //   'startTime': 0,
+    // }]
     // Animals(animals, showTime, lotteryTime)
     //开场动画固定每个动物分别写动画
     // $('#daxiang').addClass('daxiang')
@@ -62,19 +57,28 @@
     // $('#changjinglu').addClass('changjinglu')
     // $('#fenghuang').addClass('fenghuang')
     // $('#dog').addClass('dog')
-    var setTime = function(item, time) {
-      var timer = setTimeout(function() {
-        $('#'+item).addClass(item)
-      }, time)
-    }
-    setTime('daxiang', 0)
-    setTime('baozi', 0)
-    setTime('banma', 0)
-    setTime('changjinglu', 0)
-    setTime('fenghuang', 0)
-    setTime('dog', 0)
-    //两组动画 每个动物有开奖动画和退出动画
-    //开奖动
+
+    var swipe_bg = SwipeSky($('#content'), $('.content-wrap-bg'))
+    var swipe_sky = SwipeSky($('#content'), $('.content-sky'))
+    var bgTimer = setTimeout(function() {
+      swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 29000)
+      swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 34000)
+      var setTime = function(item, time) {
+        var timer = setTimeout(function() {
+          $('#'+item).addClass(item)
+        }, time)
+      }
+      setTime('daxiang', 0)
+      setTime('baozi', 0)
+      setTime('banma', 0)
+      setTime('changjinglu', 0)
+      setTime('fenghuang', 0)
+      setTime('dog', 0)
+      //两组动画 每个动物有开奖动画和退出动画
+      //开奖动
+    }, 2000)
+
+
   </script>
 </body>
 </html>

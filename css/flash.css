@@ -63,32 +63,32 @@
 }
 .daxiang {
   animation: daxiang 7s linear;
-  right: 20%;
+  right: 30%;
   top: 60%;
   display: block;
 }
 .baozi {
   animation: baozi 7s linear;
-  right: 25%;
-  top: 60%;
+  right: 35%;
+  top: 65%;
   display: block;
 }
 .fenghuang {
   animation: fenghuang 7s linear;
-  right: 30%;
+  right: 45%;
   top: 60%;
   display: block;
 }
 .banma {
   animation: banma 7s linear;
-  right: 35%;
-  top: 60%;
+  right: 55%;
+  top: 63%;
   display: block;
 }
 .changjinglu {
   animation: changjinglu 7s linear;
-  right: 40%;
-  top: 60%;
+  right: 60%;
+  top: 66%;
   display: block;
 }
 .dog {
@@ -98,28 +98,28 @@
   display: block;
 }
 @keyframes daxiang {
-  0% { right: 10%; top: 20%;transform: scale(0.1);}
-  50% {right: 30%; top: 50%;transform: scale(0.8);}
-  100% { right: 20%; top: 60%;transform: scale(0.8); }
+  0% { right: 10%; top: 15%;transform: scale(0.2);}
+  /*50% {right: 20%; top: 50%;transform: scale(0.8);}*/
+  100% { right: 30%; top: 60%;transform: scale(0.8); }
 }
 @keyframes baozi {
-  0% { right: 20%; top: 20%;transform: scale(0.1);}
-  50% {right: 40%; top: 50%;transform: scale(0.8);}
-  100% { right: 25%; top: 60%;transform: scale(0.8); }
+  0% { right: 15%; top: 15%;transform: scale(0.2);}
+  /*60% {right: 30%; top: 50%;transform: scale(0.8);}*/
+  100% { right: 35%; top: 65%;transform: scale(0.8); }
 }@keyframes fenghuang {
-  0% { right: 30%; top: 20%;transform: scale(0.1);}
-  50% {right: 35%; top: 50%;transform: scale(0.8);}
-  100% { right: 30%; top: 60%;transform: scale(0.8); }
+  0% { right: 20%; top: 15%;transform: scale(0.2);}
+  /*55% {right: 35%; top: 50%;transform: scale(0.8);}*/
+  100% { right: 45%; top: 60%;transform: scale(0.8); }
 }@keyframes banma {
-  0% { right: 40%; top: 20%;transform: scale(0.1);}
-  50% {right: 20%; top: 50%;transform: scale(0.8);}
-  100% { right: 35%; top: 60%;transform: scale(0.8); }
+  0% { right: 30%; top: 20%;transform: scale(0.2);}
+  /*65% {right: 45%; top: 50%;transform: scale(0.8);}*/
+  100% { right: 55%; top: 63%;transform: scale(0.8); }
 }@keyframes changjinglu {
-  0% { right: 50%; top: 20%;transform: scale(0.1);}
-  50% {right: 30%; top: 50%;transform: scale(0.8);}
-  100% { right: 40%; top: 60%;transform: scale(0.8); }
+  0% { right: 40%; top: 20%;transform: scale(0.2);}
+  /*55% {right: 55%; top: 50%;transform: scale(0.8);}*/
+  100% { right: 60%; top: 66%;transform: scale(0.8); }
 }@keyframes dog {
-  0% { right: 60%; top: 20%;transform: scale(0.1);}
-  50% {right: 35%; top: 50%;transform: scale(0.8);}
+  0% { right: 60%; top: 20%;transform: scale(0.2);}
+  /*50% {right: 55%; top: 50%;transform: scale(0.8);}*/
   100% { right: 45%; top: 60%;transform: scale(0.8); }
 }
