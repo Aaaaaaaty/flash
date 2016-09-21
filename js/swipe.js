@@ -1,6 +1,6 @@
-function Swipe (container) {
+function Swipe (container, className) {
   //获取背景图
-  var element = container.find('.content-wrap-bg')
+  var element = container.find(className)
   //滑动对象
   var swipe = {}
   //获取容器尺寸
