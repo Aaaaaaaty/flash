@@ -1,57 +1,55 @@
 
-function Animals (animals, showTime, lotteryTime) {
-  //获取背景height,top
-  var getBgValue = function(className) {
-    var element = $(className)
-    return {
-      height: element.height(),
-      width: element.width(),
-      top: element.position().top
+function Animals (animals, result, timer) {
+  setTimeout(function() {
+    var num = result
+    var greatNum = []
+    var quitNum = []
+    var hash = {}
+    for(var i = 0; i < num.length; i++) {
+      hash[num[i]] = true
+      animals.map(function(item, index){
+        if(num[i] === item.index) {
+          greatNum.push(item)
+        }
+      })
     }
-  }
-  var pathY = (function() {
-    var data = getBgValue('.content-wrap')
-    return data.top + data.height / 2
-  })()
-  animals.map(function(item) {
-    var data = getBgValue('.content-wrap')
-    var name = item.name
-    var startX = item.startX * data.width
-    var startY = item.startY * data.height
-    var endX = item.endX * data.width
-    var endY = item.endY * data.height
-    var startTime = item.startTime
-    var speed = showTime - startTime //持续时间 和 出场时间相加相等
-
-    var animal = $(name)
-      this.timer = setTimeout(function(){
-
+    animals.map(function(item, index){
+      if(!hash[item.index]) {
+        quitNum.push(item)
+      }
+    })
+    animals.map(function(item, index){
+      var animal = $('#' + item.name)
+      setTimeout(function(){
         animal.css({
-          'display': 'block',
-          'right': startX,
-          'top': startY
+          'right': -index - 30 + '%',
+          'transition-timing-function' : 'linear',
+          'transition-duration' : 20000 - index * 100 + 'ms',
+          'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)'
         })
+      },2000)
+    })
+    greatNum.map(function(item, index){
+      var animal = $('#' + item.name)
+      setTimeout(function(){
+        animal.css({
+          'right': 70 - index * 10 + '%',
+          'top': 72+ '%',
+          'transition-timing-function' : 'linear',
+          'transition-duration' : 2000 + 'ms',
+          'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)'
+        })
+        setTimeout(function() {
+          animal.addClass('jump')
+        }, 2000)
+      }, index * 2000 + 2000)
+    })
 
-        animal.transition({
-          'right': endX + 'px',
-          'top': endY + 'px'
-        }, speed, 'linear')
+    setTimeout(function () {
+      greatNum.map(function(item, index){
+        
+      }
+    }, 20000)
 
-      }, startTime)
-  })
+  }, timer)
 }
-
-// var an = $('#dog')
-// var anHeight = an.height()
-// an.css({
-//   top: pathY - anHeight + 25
-// })
-// var anTop = an.position().top + 130
-
-//设置动物位置
-// var getAnimal = function(animals) {
-//   var animal = $(animals)
-// }
-//多种动物出场动画，每个动物代表一个数字
-
-//开奖时，随机抽取8个数，这8个数代表的动物的路径需要依次超前

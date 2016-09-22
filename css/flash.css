@@ -20,8 +20,13 @@
 .content-sky {
   position: absolute;;
   z-index: 2;
-  /*top: 0%;*/
+}
 
+.content-car {
+  position: fixed;;
+  height: 164px;
+  bottom: 0px;
+  z-index: 4;
 }
 
 .animals {
@@ -214,7 +219,7 @@
 .long {
   animation: long 6s linear;
   right: 16%;
-  top: 65%;
+  top: 5%;
   display: block;
 }
 .laoshu {
@@ -249,7 +254,7 @@
 }
 @keyframes long {
   0% { right: 10%; top: 15%;transform: scale(0.2);}
-  100% { right: 16%; top: 65%;transform: scale(0.8); }
+  100% { right: 16%; top: 5%;transform: scale(0.8); }
 }
 @keyframes laoshu {
   0% { right: 60%; top: 15%;transform: scale(0.2);}
@@ -325,4 +330,14 @@
  @keyframes tuzi {
    0% { right: 20%; top: 15%;transform: scale(0.2);}
    100% { right: -15%; top: 60%;transform: scale(0.8); }
+ }
+
+.jump {
+  animation: jump 0.5s linear;
+  top: 72%
+}
+ @keyframes jump {
+   0% { top: 72%;}
+   50% { top: 65%}
+   100% { top: 72%;}
  }
