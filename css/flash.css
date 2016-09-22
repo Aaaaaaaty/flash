@@ -267,62 +267,62 @@
  /*2s后出场 牛 熊猫 猪 企鹅 狮子 兔子*/
  .niu {
    animation: niu 5s linear;
-   right: 15%;
-   top: 50%;
+   right: 50%;
+   top: 60%;
    display: block;
  }
  .panda {
    animation: pande 5s linear;
-   right: 15%;
+   right: -15%;
    top: 50%;
    display: block;
  }
  .pig {
    animation: pig 5s linear;
-   right: 15%;
-   top: 50%;
+   right: 0%;
+   top: 60%;
    display: block;
  }
  .qie {
    animation: qie 5s linear;
-   right: 15%;
+   right: 41%;
    top: 50%;
    display: block;
  }
  .shizi {
    animation: shizi 5s linear;
-   right: 15%;
-   top: 50%;
+   right: -15%;
+   top: 65%;
    display: block;
  }
  .tuzi {
    animation: tuzi 5s linear;
-   right: 15%;
-   top: 50%;
+   right: -15%;
+   top: 60%;
    display: block;
  }
  /*牛 熊猫 猪 企鹅 狮子 兔子*/
  @keyframes niu {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 65%; top: 15%;transform: scale(0.2);}
+   100% { right: 50%; top: 60%;transform: scale(0.8); }
  }
  @keyframes panda {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 75%; top: 30%;transform: scale(0.2);}
+   100% { right: 55%; top: 50%;transform: scale(0.8); }
  }
  @keyframes pig {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 66%; top: 15%;transform: scale(0.2);}
+   100% { right: 60%; top: 60%;transform: scale(0.8); }
  }
  @keyframes qie {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 47%; top: 25%;transform: scale(0.2);}
+   100% { right: 41%; top: 50%;transform: scale(0.8); }
  }
  @keyframes shizi {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 10%; top: 35%;transform: scale(0.2);}
+   100% { right: -15%; top: 65%;transform: scale(0.8); }
  }
  @keyframes tuzi {
-   0% { right: 10%; top: 15%;transform: scale(0.2);}
-   100% { right: 0%; top: 60%;transform: scale(0.8); }
+   0% { right: 20%; top: 15%;transform: scale(0.2);}
+   100% { right: -15%; top: 60%;transform: scale(0.8); }
  }
