@@ -11,12 +11,29 @@
       <img src="./pic/bg.png" alt="" class="content-wrap-bg">
       <img src="./pic/sky.jpg" class="content-sky"alt="">
     </div>
+    <!-- 0s出场 -->
     <div class="animals" id="daxiang"></div>
     <div class="animals" id="baozi"></div>
     <div class="animals" id="fenghuang"></div>
     <div class="animals" id="dog"></div>
     <div class="animals" id="banma"></div>
     <div class="animals" id="changjinglu"></div>
+    <div class="animals" id="she"></div>
+    <!-- 1s出场 -->
+    <div class="animals" id="houzi"></div>
+    <div class="animals" id="ji"></div>
+    <div class="animals" id="laohu"></div>
+    <div class="animals" id="laoying"></div>
+    <div class="animals" id="long"></div>
+    <div class="animals" id="laoshu"></div>
+    <div class="animals" id="yang"></div>
+    <!-- 2s出场 -->
+    <div class="animals" id="niu"></div>
+    <div class="animals" id="panda"></div>
+    <div class="animals" id="zhu"></div>
+    <div class="animals" id="qie"></div>
+    <div class="animals" id="shizi"></div>
+    <div class="animals" id="tuzi"></div>
   </div>
   <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="./js/jquery.transit.min.js"></script>
@@ -68,17 +85,29 @@
           $('#'+item).addClass(item)
         }, time)
       }
-      // 先出场 大象 豹子 斑马 长颈鹿 凤凰 狗
+      // 0s后出场 大象 豹子 斑马 长颈鹿 凤凰 狗 蛇
       setTime('daxiang', 0)
       setTime('baozi', 0)
       setTime('banma', 0)
       setTime('changjinglu', 0)
       setTime('fenghuang', 0)
       setTime('dog', 0)
-      // 1s后出场 猴子 鸡 老虎 老鹰 龙 老鼠
-
-      // 2s后出场 牛 熊猫 猪 企鹅 狮子
-      // 3s后出场 蛇 兔子 羊
+      setTime('she', 0)
+      // 1s后出场 猴子 鸡 老虎 老鹰 龙 老鼠 羊
+      setTime('houzi', 1000)
+      setTime('ji', 1000)
+      setTime('laoshu', 1000)
+      setTime('laoying', 1000)
+      setTime('long', 1000)
+      setTime('laohu', 1000)
+      setTime('yang', 1000)
+      // 2s后出场 牛 熊猫 猪 企鹅 狮子 兔子
+      setTime('niu', 2000)
+      setTime('panda', 2000)
+      setTime('gig', 2000)
+      setTime('qie', 2000)
+      setTime('shizi', 2000)
+      setTime('tuzi', 2000)
       //两组动画 每个动物有开奖动画和退出动画
       //开奖动
     }, 2000)

@@ -61,15 +61,72 @@
   background: url('../pic/animals/dog.png');
   /*background-color: blue;*/
 }
+#houzi {
+  background: url('../pic/animals/houzi.png');
+  /*background-color: blue;*/
+}
+#ji {
+  background: url('../pic/animals/ji.png');
+  /*background-color: blue;*/
+}
+#laohu {
+  background: url('../pic/animals/laohu.png');
+  /*background-color: blue;*/
+}
+#laoying {
+  background: url('../pic/animals/laoying.png');
+  /*background-color: blue;*/
+}
+#long {
+  background: url('../pic/animals/long.png');
+  /*background-color: blue;*/
+}
+#laoshu {
+  background: url('../pic/animals/laoshu.png');
+  /*background-color: blue;*/
+}
+#yang {
+  background: url('../pic/animals/yang.png');
+  /*background-color: blue;*/
+}
+#she {
+  background: url('../pic/animals/she.png');
+  /*background-color: blue;*/
+}
+#niu {
+  background: url('../pic/animals/niu.png');
+  /*background-color: blue;*/
+}
+#panda {
+  background: url('../pic/animals/panda.png');
+  /*background-color: blue;*/
+}
+#shizi {
+  background: url('../pic/animals/shizi.png');
+  /*background-color: blue;*/
+}
+#tuzi {
+  background: url('../pic/animals/tuzi.png');
+  /*background-color: blue;*/
+}
+#qie {
+  background: url('../pic/animals/qie.png');
+  /*background-color: blue;*/
+}
+#pig {
+  background: url('../pic/animals/pig.png');
+  /*background-color: blue;*/
+}
+
 .daxiang {
   animation: daxiang 7s linear;
-  right: 30%;
-  top: 60%;
+  right: 23%;
+  top: 45%;
   display: block;
 }
 .baozi {
   animation: baozi 7s linear;
-  right: 35%;
+  right: -10%;
   top: 65%;
   display: block;
 }
@@ -81,47 +138,191 @@
 }
 .banma {
   animation: banma 7s linear;
-  right: 55%;
-  top: 63%;
+  right: 23%;
+  top: 64%;
   display: block;
 }
 .changjinglu {
   animation: changjinglu 7s linear;
-  right: 60%;
-  top: 66%;
+  right: 31%;
+  top: 47%;
   display: block;
 }
 .dog {
   animation: dog 7s linear;
-  right: 45%;
-  top: 60%;
+  right: 35%;
+  top: 50%;
   display: block;
 }
+.she {
+  animation: she 7s linear;
+  right: 15%;
+  top: 50%;
+  display: block;
+}
+
 @keyframes daxiang {
   0% { right: 10%; top: 15%;transform: scale(0.2);}
-  100% { right: 30%; top: 60%;transform: scale(0.8); }
+  100% { right: 23%; top: 45%;transform: scale(0.8); }
 }
 @keyframes baozi {
   0% { right: 15%; top: 15%;transform: scale(0.2);}
-  100% { right: 35%; top: 65%;transform: scale(0.8); }
-}@keyframes fenghuang {
+  100% { right: -10%; top: 65%;transform: scale(0.8); }
+}
+@keyframes fenghuang {
   0% { right: 60%; top: 10%;transform: scale(0.2);}
   100% { right: 45%; top: -5%;transform: scale(0.8); }
-}@keyframes banma {
+}
+@keyframes banma {
   0% { right: 30%; top: 20%;transform: scale(0.2);}
-  100% { right: 55%; top: 63%;transform: scale(0.8); }
-}@keyframes changjinglu {
+  100% { right: 23%; top: 64%;transform: scale(0.8); }
+}
+@keyframes changjinglu {
   0% { right: 40%; top: 20%;transform: scale(0.2);}
-  100% { right: 60%; top: 66%;transform: scale(0.8); }
-}@keyframes dog {
-  0% { right: 60%; top: 20%;transform: scale(0.2);}
-  100% { right: 45%; top: 60%;transform: scale(0.8); }
+  100% { right: 31%; top: 47%;transform: scale(0.8); }
+}
+@keyframes dog {
+  0% { right: 50%; top: 20%;transform: scale(0.2);}
+  100% { right: 35%; top: 50%;transform: scale(0.8); }
+}
+@keyframes she {
+  0% { right: 10%; top: 15%;transform: scale(0.2);}
+  100% { right: 15%; top: 50%;transform: scale(0.8); }
 }
 
 
 
-/*后出场动物*/
-@keyframes daxiang {
+/*1s后出场动物 猴子 鸡 老虎 老鹰 龙 老鼠 羊*/
+.houzi {
+  animation: houzi 6s linear;
+  right: 0%;
+  top: 60%;
+  display: block;
+}
+.ji {
+  animation: ji 6s linear;
+  right: 10%;
+  top: 65%;
+  display: block;
+}
+.laoying {
+  animation: laoying 6s linear;
+  right: 33%;
+  top: -8%;
+  display: block;
+}
+.long {
+  animation: long 6s linear;
+  right: 16%;
+  top: 65%;
+  display: block;
+}
+.laoshu {
+  animation: laoshu 6s linear;
+  right: 38%;
+  top: 65%;
+  display: block;
+}
+.yang {
+  animation: yang 6s linear;
+  right: 6%;
+  top: 50%;
+  display: block;
+}
+.laohu {
+  animation: laohu 6s linear;
+  right: 30%;
+  top: 60%;
+  display: block;
+}
+@keyframes houzi {
   0% { right: 10%; top: 15%;transform: scale(0.2);}
+  100% { right: 0%; top: 60%;transform: scale(0.8); }
+}
+@keyframes ji {
+  0% { right: -10%; top: 15%;transform: scale(0.2);}
+  100% { right: 10%; top: 65%;transform: scale(0.8); }
+}
+@keyframes laoying {
+  0% { right: 70%; top: 15%;transform: scale(0.2);}
+  100% { right: 33%; top: -8%;transform: scale(0.8); }
+}
+@keyframes long {
+  0% { right: 10%; top: 15%;transform: scale(0.2);}
+  100% { right: 16%; top: 65%;transform: scale(0.8); }
+}
+@keyframes laoshu {
+  0% { right: 60%; top: 15%;transform: scale(0.2);}
+  100% { right: 38%; top: 65%;transform: scale(0.8); }
+}
+@keyframes yang {
+  0% { right: 10%; top: 15%;transform: scale(0.2);}
+  100% { right: 6%; top: 50%;transform: scale(0.8); }
+}
+@keyframes laohu {
+  0% { right: 25%; top: 15%;transform: scale(0.2);}
   100% { right: 30%; top: 60%;transform: scale(0.8); }
 }
+
+ /*2s后出场 牛 熊猫 猪 企鹅 狮子 兔子*/
+ .niu {
+   animation: niu 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ .panda {
+   animation: pande 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ .pig {
+   animation: pig 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ .qie {
+   animation: qie 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ .shizi {
+   animation: shizi 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ .tuzi {
+   animation: tuzi 5s linear;
+   right: 15%;
+   top: 50%;
+   display: block;
+ }
+ /*牛 熊猫 猪 企鹅 狮子 兔子*/
+ @keyframes niu {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
+ @keyframes panda {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
+ @keyframes pig {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
+ @keyframes qie {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
+ @keyframes shizi {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
+ @keyframes tuzi {
+   0% { right: 10%; top: 15%;transform: scale(0.2);}
+   100% { right: 0%; top: 60%;transform: scale(0.8); }
+ }
