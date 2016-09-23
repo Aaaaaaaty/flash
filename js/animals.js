@@ -3,7 +3,6 @@ function Animals (animals, result, timer) {
   setTimeout(function() {
     var num = result
     var greatNum = []
-    var quitNum = []
     var hash = {}
     for(var i = 0; i < num.length; i++) {
       hash[num[i]] = true
@@ -13,11 +12,6 @@ function Animals (animals, result, timer) {
         }
       })
     }
-    animals.map(function(item, index){
-      if(!hash[item.index]) {
-        quitNum.push(item)
-      }
-    })
     animals.map(function(item, index){
       var animal = $('#' + item.name)
       setTimeout(function(){
@@ -34,7 +28,7 @@ function Animals (animals, result, timer) {
       setTimeout(function(){
         animal.css({
           'right': 70 - index * 10 + '%',
-          'top': 72+ '%',
+          'top': 68 + '%',
           'transition-timing-function' : 'linear',
           'transition-duration' : 2000 + 'ms',
           'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)'
@@ -47,8 +41,69 @@ function Animals (animals, result, timer) {
 
     setTimeout(function () {
       greatNum.map(function(item, index){
-        
-      }
+        var animal = $('#' + item.name)
+        var show = $('#show')
+        show.addClass('show')
+        animal.css({
+          'z-index': 100,
+          'transition-timing-function' : 'linear',
+          'transition-duration' : 500 + 'ms',
+          'transform' : 'translate3d(0px, 0px, 0px);scale(1.8)'
+        })
+        switch(index)
+        {
+          case 0:
+            animal.css({
+              'right': 75 + '%',
+              'top': 10 + '%'
+            })
+            break
+          case 1:
+            animal.css({
+              'right': 55 + '%',
+              'top': 10 + '%'
+            })
+            break
+          case 2:
+            animal.css({
+              'right': 35 + '%',
+              'top': 10 + '%'
+            })
+            break
+          case 3:
+            animal.css({
+              'right': 15 + '%',
+              'top': 10 + '%'
+            })
+            break
+          case 4:
+            animal.css({
+              'right': 75 + '%',
+              'top': 52 + '%'
+            })
+            break
+          case 5:
+            animal.css({
+              'right': 55 + '%',
+              'top': 52 + '%'
+            })
+            break
+          case 6:
+            animal.css({
+              'right': 35 + '%',
+              'top': 52 + '%'
+            })
+            break
+          case 7:
+            animal.css({
+              'right': 15 + '%',
+              'top': 52 + '%'
+            })
+            break
+          default:
+            break
+        }
+      })
     }, 20000)
 
   }, timer)

@@ -25,7 +25,7 @@
 .content-car {
   position: fixed;;
   height: 164px;
-  bottom: 0px;
+  bottom: 35px;
   z-index: 4;
 }
 
@@ -334,10 +334,18 @@
 
 .jump {
   animation: jump 0.5s linear;
-  top: 72%
+  top: 68%
 }
  @keyframes jump {
-   0% { top: 72%;}
-   50% { top: 65%}
-   100% { top: 72%;}
+   0% { top: 68%;}
+   50% { top: 63%}
+   100% { top: 68%;}
  }
+.show {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background-color: white;
+  z-index: 33;
+}
