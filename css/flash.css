@@ -31,8 +31,8 @@
 
 .animals {
   display: none;
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   position: absolute;
   z-index: 3;
   top: 0px;
@@ -87,7 +87,7 @@
   /*background-color: blue;*/
 }
 #laoshu {
-  background: url('../pic/animals/laoshu.gif');
+  background: url('../pic/animals/laoshu.png');
   /*background-color: blue;*/
 }
 #yang {
