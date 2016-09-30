@@ -24,9 +24,10 @@
 
 .content-car {
   position: fixed;
+  /*min-width: 1200px;*/
   width: 100%;
   bottom: 35px;
-  z-index: 4;
+  z-index: 35;
 }
 
 .animals {
@@ -413,4 +414,86 @@
   opacity: 0.5;
   background-color: white;
   z-index: 33;
+}
+.train-gif {
+  position: relative;
+  /*min-width: 1200px;*/
+}
+.number {
+  min-width: 50px;
+  min-height: 40px;
+  width: 5%;
+  height: 6%;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.8;
+  font-family: '微软雅黑',sans-serif;
+  text-align: center;
+  font-size: 40px;
+  line-height: 53px;
+}
+
+ @keyframes tran {
+   0% { transform: scale(1) }
+   50% { transform: scale(0.5) }
+   100% { transform: scale(1) }
+ }
+
+.num-icon {
+  animation: tran 0.2s linear;
+}
+
+.one {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 20.4%;
+  background-color: pink;
+  opacity: 0.5;
+}
+.two {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 30.4%;
+  background-color: yellow;
+  opacity: 0.4;
+}
+.three {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 41%;
+  background-color: yellow;
+  opacity: 0.4;
+}
+.four {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 51%;
+}
+.five {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 61%;
+}
+.six {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 71%;
+}
+.seven {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 81%;
+}
+.eight {
+  position: fixed;
+  z-index: 40;
+  bottom: 75px;
+  left: 91%;
 }
