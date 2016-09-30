@@ -9,8 +9,8 @@
   <div id="content">
     <div class="content-wrap">
       <img src="./pic/bg.png" alt="" class="content-wrap-bg">
-      <img src="./pic/sky.jpg" class="content-sky"alt="">
-      <img src="./pic/car.png" class="content-car" alt="">
+      <img src="./pic/sky.png" class="content-sky"alt="">
+      <img src="./pic/train.gif" class="content-car" alt="">
     </div>
     <!-- 0s出场 -->
     <div class="animals" id="daxiang"></div>
@@ -118,7 +118,7 @@
     //开场动画部分代码
     var bgTimer = setTimeout(function() {
       swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 25000)
-      swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 34000)
+      swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 40000)
       var setTime = function(item, time) {
         var timer = setTimeout(function() {
           $('#'+item).addClass(item)

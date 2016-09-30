@@ -27,8 +27,8 @@ function Animals (animals, result, timer) {
       var animal = $('#' + item.name)
       setTimeout(function(){
         animal.css({
-          'right': 70 - index * 10 + '%',
-          'top': 68 + '%',
+          'right': 65 - index * 10 + '%',
+          'top': 60 + '%',
           'transition-timing-function' : 'linear',
           'transition-duration' : 2000 + 'ms',
           'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)'
@@ -48,7 +48,7 @@ function Animals (animals, result, timer) {
           'z-index': 100,
           'transition-timing-function' : 'linear',
           'transition-duration' : 500 + 'ms',
-          'transform' : 'translate3d(0px, 0px, 0px);scale(1.8)'
+          'transform' : 'translate3d(0px, 0px, 0px);scale(1.2)'
         })
         switch(index)
         {
