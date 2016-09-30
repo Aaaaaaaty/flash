@@ -44,83 +44,148 @@
 }
 #daxiang {
   background: url('../pic/animals/daxiang.gif');
-  /*background-color: blue;*/
 }
 #baozi {
   background: url('../pic/animals/baozi.gif');
-  /*background-color: blue;*/
 }
 #fenghuang {
   background: url('../pic/animals/fenghuang.gif');
-  /*background-color: blue;*/
 }
 #banma {
   background: url('../pic/animals/banma.gif');
-  /*background-color: blue;*/
 }
 #changjinglu {
   background: url('../pic/animals/changjinglu.gif');
-  /*background-color: blue;*/
 }
 #dog {
   background: url('../pic/animals/dog.gif');
-  /*background-color: blue;*/
 }
 #houzi {
   background: url('../pic/animals/houzi.gif');
-  /*background-color: blue;*/
 }
 #ji {
   background: url('../pic/animals/ji.gif');
-  /*background-color: blue;*/
 }
 #laohu {
   background: url('../pic/animals/laohu.gif');
-  /*background-color: blue;*/
 }
 #laoying {
   background: url('../pic/animals/laoying.gif');
-  /*background-color: blue;*/
 }
 #long {
   background: url('../pic/animals/long.gif');
-  /*background-color: blue;*/
 }
 #laoshu {
   background: url('../pic/animals/laoshu.gif');
-  /*background-color: blue;*/
 }
 #yang {
   background: url('../pic/animals/yang.gif');
-  /*background-color: blue;*/
 }
 #she {
   background: url('../pic/animals/she.gif');
-  /*background-color: blue;*/
 }
 #niu {
   background: url('../pic/animals/niu.gif');
-  /*background-color: blue;*/
 }
 #panda {
   background: url('../pic/animals/panda.gif');
-  /*background-color: blue;*/
 }
 #shizi {
   background: url('../pic/animals/shizi.gif');
-  /*background-color: blue;*/
 }
 #tuzi {
   background: url('../pic/animals/tuzi.gif');
-  /*background-color: blue;*/
 }
 #qie {
   background: url('../pic/animals/qie.gif');
-  /*background-color: blue;*/
 }
 #pig {
   background: url('../pic/animals/pig.gif');
-  /*background-color: blue;*/
+}
+
+
+
+
+
+.new-daxiang {
+  
+  background: url('../pic/animals/daxiang.png') !important;
+}
+.new-baozi {
+  
+  background: url('../pic/animals/baozi.png')!important;
+}
+.new-fenghuang {
+  
+  background: url('../pic/animals/fenghuang.png')!important;
+}
+.new-banma {
+  
+  background: url('../pic/animals/banma.png')!important;
+}
+.new-changjinglu {
+  
+  background: url('../pic/animals/changjinglu.png')!important;
+}
+.new-dog {
+  
+  background: url('../pic/animals/dog.png')!important;
+}
+.new-houzi {
+  
+  background: url('../pic/animals/houzi.png')!important;
+}
+.new-ji {
+  
+  background: url('../pic/animals/ji.png')!important;
+}
+.new-laohu {
+  
+  background: url('../pic/animals/laohu.png')!important;
+}
+.new-laoying {
+  
+  background: url('../pic/animals/laoying.png')!important;
+}
+.new-long {
+  
+  background: url('../pic/animals/long.png')!important;
+}
+.new-laoshu {
+  
+  background: url('../pic/animals/laoshu.png')!important;
+}
+.new-yang {
+  
+  background: url('../pic/animals/yang.png')!important;
+}
+.new-she {
+  
+  background: url('../pic/animals/she.png')!important;
+}
+.new-niu {
+  
+  background: url('../pic/animals/niu.png')!important;
+}
+.new-panda {
+  
+  background: url('../pic/animals/panda.png')!important;
+}
+.new-shizi {
+  
+  background: url('../pic/animals/shizi.png')!important;
+}
+.new-tuzi {
+  
+  background: url('../pic/animals/tuzi.png')!important;
+}
+.new-qie {
+  
+  background: url('../pic/animals/qie.png')!important;
+}
+.new-pig {
+  
+  background: url('../pic/animals/pig.png')!important;
 }
 
 .daxiang {

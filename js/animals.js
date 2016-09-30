@@ -27,7 +27,7 @@ function Animals (animals, result, timer) {
       var animal = $('#' + item.name)
       setTimeout(function(){
         animal.css({
-          'right': 65 - index * 10 + '%',
+          'right': 67 - index * 10 + '%',
           'top': 60 + '%',
           'transition-timing-function' : 'linear',
           'transition-duration' : 2000 + 'ms',
@@ -35,6 +35,10 @@ function Animals (animals, result, timer) {
         })
         setTimeout(function() {
           animal.addClass('jump')
+          animal.css({
+            background: 'none'
+          })
+          animal.addClass('new-'+item.name)
         }, 2000)
       }, index * 2000 + 2000)
     })
@@ -54,49 +58,49 @@ function Animals (animals, result, timer) {
         {
           case 0:
             animal.css({
-              'right': 75 + '%',
+              'right': 67 + '%',
               'top': 10 + '%'
             })
             break
           case 1:
             animal.css({
-              'right': 55 + '%',
+              'right': 47 + '%',
               'top': 10 + '%'
             })
             break
           case 2:
             animal.css({
-              'right': 35 + '%',
+              'right': 27 + '%',
               'top': 10 + '%'
             })
             break
           case 3:
             animal.css({
-              'right': 15 + '%',
+              'right': 7 + '%',
               'top': 10 + '%'
             })
             break
           case 4:
             animal.css({
-              'right': 75 + '%',
+              'right': 67 + '%',
               'top': 52 + '%'
             })
             break
           case 5:
             animal.css({
-              'right': 55 + '%',
+              'right': 47 + '%',
               'top': 52 + '%'
             })
             break
           case 6:
             animal.css({
-              'right': 35 + '%',
+              'right': 27 + '%',
               'top': 52 + '%'
             })
             break
           case 7:
             animal.css({
-              'right': 15 + '%',
+              'right': 7 + '%',
               'top': 52 + '%'
             })
             break
