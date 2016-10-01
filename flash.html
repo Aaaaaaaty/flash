@@ -41,11 +41,12 @@
   <div id="show" ></div>
   <script type="text/javascript" src="./js/jquery-1.8.2.min.js"></script>
   <script type="text/javascript" src="./js/jquery.transit.min.js"></script>
+  <script src="./js/jquery-mockjax.min.js"></script>
   <script type="text/javascript" src="./js/swipe.sky.js"></script>
   <script type="text/javascript" src="./js/animals.js"></script>
   <script type="text/javascript">
     //提前注册好开奖和退出动画
-
+    var result = []
     var animals = [{
       'name': 'laoshu',
       'index': 1
@@ -107,11 +108,25 @@
       'name': 'fenghuang',
       'index': 20
     }]
-    var result = [1, 2, 18, 17, 20, 16, 13, 12] //后期通过ajax异步获取
+
+    $.mockjax({
+      url: '/products/',
+      responseText: [1, 2, 7, 20, 14, 13, 5, 10]
+    })
+    $.ajax({
+      type: "GET",
+      url: "/products/",
+      dataType: "json",
+      success: function(data){
+        result = data
+      }
+    })
+
+    // var result = [1, 2, 18, 17, 20, 16, 13, 12] //后期通过ajax异步获取
     //7s后开始开奖
     setTimeout(function(){
       Animals(animals, result, 1000)
-    }, 7000)
+    }, 6500)
 
     //背景滚动部分代码
     var swipe_bg = SwipeSky($('#content'), $('.content-wrap-bg'))
@@ -120,7 +135,7 @@
     //开场动画部分代码
     var bgTimer = setTimeout(function() {
       swipe_bg.scrollTo($('.content-wrap-bg').width() - $('#content').width(), 25000)
-      swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 40000)
+      swipe_sky.scrollTo($('.content-sky').width() - $('#content').width(), 30000)
       var setTime = function(item, time) {
         var timer = setTimeout(function() {
           $('#'+item).addClass(item)
@@ -150,8 +165,10 @@
       setTime('shizi', 2000)
       setTime('tuzi', 2000)
     }, 2000)
-
-
+    setTimeout(function() {
+      window.location.href = "./over.html"
+    }, 33000)
+    
   </script>
 </body>
 </html>

@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>倒计时</title>
   <style>
-    .a {
-      width: 200px;
-      height: 200px;
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .kaijiang {
+      width: 100%;
       position: absolute;
-      z-index: 3;
-      top: 0px;
-      right: 0px;
-      -moz-transform:scale(0.8);
-      -webkit-transform:scale(0.8);
-      -o-transform:scale(0.8);
-      transform: scale(0.8);
+      z-index: 1;
+    }
+    .daojishi {
+      width: 100%;
+      position: absolute;
+      z-index: 2;
     }
   </style>
 </head>
 <body>
-  <img src="./pic/animals/laoshu.gif" class="a" alt="">
-  <img src="./pic/1.gif" alt="">
+  <img class="daojishi" src="./pic/daojishi.gif" alt="">
+  <img class="kaijiang" src="./pic/kaijiang.gif" alt="">
 </body>
+<script>
+    setTimeout(function() {
+      window.location.href = "./flash.html"
+    }, 5000)
+
+</script>
 </html>

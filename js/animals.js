@@ -51,19 +51,21 @@ function Animals (animals, result, timer) {
           'top': 60 + '%',
           'transition-timing-function' : 'linear',
           'transition-duration' : 2000 + 'ms',
-          'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)'
+          'transform' : 'translate3d(0px, 0px, 0px);scale(0.8)',
+          'z-index': 20 + index
         })
         setTimeout(function() {
           appendNum(index, item.index)
         }, 2000)
         setTimeout(function() {
           animal.addClass('jump')
+        }, 2000)
+        setTimeout(function() {
           animal.css({
             background: 'none'
           })
           animal.addClass('new-'+item.name)
-
-        }, 2000)
+        }, 1500)
       }, index * 2000 + 2000)
     })
 
