@@ -350,7 +350,7 @@
  }
  .pig {
    animation: pig 5s linear;
-   right: 0%;
+   right: 60%;
    top: 50%;
    display: block;
  }

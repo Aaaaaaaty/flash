@@ -30,6 +30,7 @@
     <div class="animals" id="long"></div>
     <div class="animals" id="laoshu"></div>
     <div class="animals" id="yang"></div>
+    <div class="animals" id="pig"></div>
     <!-- 2s出场 -->
     <div class="animals" id="niu"></div>
     <div class="animals" id="panda"></div>
@@ -111,13 +112,13 @@
 
     $.mockjax({
       url: '/products/',
-      responseText: [1, 2, 7, 20, 14, 13, 5, 10]
+      responseText: [1, 11, 7, 20, 14, 13, 5, 10]
     })
     $.ajax({
       type: "GET",
       url: "/products/",
       dataType: "json",
-      success: function(data){
+      success: function(data){ // data就是ajax返回的数组
         result = data
       }
     })
@@ -160,7 +161,7 @@
       // 2s后出场 牛 熊猫 猪 企鹅 狮子 兔子
       setTime('niu', 2000)
       setTime('panda', 2000)
-      setTime('gig', 2000)
+      setTime('pig', 2000)
       setTime('qie', 2000)
       setTime('shizi', 2000)
       setTime('tuzi', 2000)
